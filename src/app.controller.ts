@@ -13,6 +13,6 @@ export class AppController {
 
   @Post()
   createUser(@Body() createUserRequest: CreateUserRequest) {
-    return this.appService.createUser(createUserRequest);
+    this.appService.createUser(createUserRequest);
   }
 }
